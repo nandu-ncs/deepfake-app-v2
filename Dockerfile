@@ -2,8 +2,8 @@
 FROM python:3.10.11-slim
 
 # Create a non-root user with a specific user ID and group ID
-RUN addgroup --system --gid 10001 myuser && \
-    adduser --system --uid 10001 --ingroup myuser myuser
+RUN addgroup -g 10016 choreo && \
+    adduser  --disabled-password  --no-create-home --uid 10016 --ingroup choreo choreouser
 
 # Set the working directory in the container
 WORKDIR /app
