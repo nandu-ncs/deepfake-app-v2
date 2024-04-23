@@ -83,9 +83,9 @@ def pred():
         dnet_pred = []
 
         model_google = load_model(os.path.join(
-            os.getcwd(), 'models\Googlenet_Model.h5'))
+            os.getcwd(), 'models\googlenet_sc.h5'))
         model_dense = load_model(os.path.join(
-            os.getcwd(), 'models\densenet.h5'))
+            os.getcwd(), 'models\densenet_sc.h5'))
 
         res = []
         rr = []
