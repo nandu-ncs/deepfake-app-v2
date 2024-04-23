@@ -1,4 +1,5 @@
 flask
+keras==2.15
 tensorflow
 dlib
 opencv-python
