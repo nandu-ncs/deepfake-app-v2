@@ -1,6 +1,11 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10.11-slim
 
+# Install CMake
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    cmake \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /python-docker
 
 COPY requirements.txt requirements.txt
