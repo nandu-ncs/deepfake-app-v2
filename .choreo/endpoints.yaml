@@ -1,0 +1,9 @@
+version: 0.1
+endpoints:
+  - name: deepfake-app-v2
+    port: 5000
+    networkVisibility: Public
+    http:
+      path: /
+      method: GET
+      handler: app.handler
